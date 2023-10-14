@@ -51,7 +51,7 @@ describe("recruitment functionality", () => {
           .then((response) => {
             expect(response.status).to.equal(200);
 
-            console.log(response, "pput");
+            console.log(response, "put");
             console.log(response.body.data.action, "1");
             expect(response.body.data.action.label).to.equal("Shortlisted");
           })
